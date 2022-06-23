@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>IRA Frame Grabber</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="WindowsFormsApp1.Resources.Res.dll" />
+    <None Remove="WindowsFormsApp1.Resources.AFo.dll" />
+    <None Remove="WindowsFormsApp1.Resources.AFo.dll" />
+    <None Remove="WindowsFormsApp1.Resources.AFo.dll" />
+    <EmbeddedResource Include="WindowsFormsApp1.Resources.Res.dll" />
+    <EmbeddedResource Include="WindowsFormsApp1.Resources.AFo.dll" />
+    <EmbeddedResource Include="WindowsFormsApp1.Resources.AFo.dll" />
+    <EmbeddedResource Include="WindowsFormsApp1.Resources.AFo.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Resolve.HotKeys" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="AForge.Imaging" />
+    <Reference Include="AForge.Math" />
+  </ItemGroup>
+</Project>

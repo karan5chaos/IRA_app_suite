@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>IRA_Sampler</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net451</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="IRA_Sampler.Resc.ClosedXML.dll" />
+    <None Remove="IRA_Sampler.Resc.DocumentForma.dll" />
+    <None Remove="IRA_Sampler.Resc.Cyotek.Window.dll" />
+    <None Remove="IRA_Sampler.Resc.AForge.dll" />
+    <None Remove="IRA_Sampler.Resc.AForge.Imagin.dll" />
+    <None Remove="IRA_Sampler.Resc.AForge.Imagin.dll" />
+    <None Remove="IRA_Sampler.Resc.AForge.Math.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.ClosedXML.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.DocumentForma.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.Cyotek.Window.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.AForge.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.AForge.Imagin.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.AForge.Imagin.dll" />
+    <EmbeddedResource Include="IRA_Sampler.Resc.AForge.Math.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Cyotek.Windows.Forms.ImageBox" />
+    <Reference Include="System.Data" />
+    <Reference Include="AForge.Math" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ClosedXML" />
+    <Reference Include="AForge.Imaging" />
+    <Reference Include="AForge" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>
